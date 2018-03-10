@@ -1,0 +1,23 @@
+{
+  "name": "MonkWebSite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "shx rm -rf public/** && NODE_ENV=production webpack -p --progress",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "eslint": "^4.18.2",
+    "style-loader": "^0.20.3",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  }
+}
