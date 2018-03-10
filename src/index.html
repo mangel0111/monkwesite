@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Monk</title>
-    <link href="content/css/monkStyle.css" rel="stylesheet" />
+    <link href="./content/css/monkStyle.css" rel="stylesheet" />
 </head>
 <body>
     <div id="timeOut" class="timeout">
         <div class="centered">
-            <img id="monk-logo" class="floating" src="Content/Image/monk.png" alt="monk floating"/>
+            <img id="monk-logo" class="floating" src="./content/Image/monk.png" alt="monk floating"/>
             <br /><br />
             <div class="text-monk text-alight-center push-to-left">
                 <span class="moving-alt">Patience,</span><span class="moving">Young Padawan...</span>
@@ -58,13 +58,13 @@
                     <div class="media-icons pointer">
                         <a class="mailto" href="mailto:wesley@mediamonks.com">
                             <span class="media-icons">
-                                <img id="mail-logo" class="media-icons-default invert" src="Content/Image/svg/mail.svg" />
+                                <img id="mail-logo" class="media-icons-default invert" src="./content/Image/svg/mail.svg" />
                             </span>
                             <span> Mails On</span>
                         </a>   
-                        <span class="media-icons" onclick="GoToMedia('facebook')"><img id="face-logo" class="media-icons-default invert" src="Content/Image/svg/facebook.svg" /></span>
+                        <span class="media-icons" onclick="GoToMedia('facebook')"><img id="face-logo" class="media-icons-default invert" src="./content/Image/svg/facebook.svg" /></span>
                         <span onclick="GoToMedia('facebook')"> Facebook</span>
-                        <span class="media-icons" onclick="GoToMedia('twitter')"><img id="twitter-logo" class="media-icons-default invert" src="Content/Image/svg/twitter.svg" /></span>
+                        <span class="media-icons" onclick="GoToMedia('twitter')"><img id="twitter-logo" class="media-icons-default invert" src="./content/Image/svg/twitter.svg" /></span>
                         <span class="media-icons" onclick="GoToMedia('twitter')">Twitter</span>
                     </div>
                 </div>
@@ -74,24 +74,24 @@
         <div id="slider-controls">
             <nav>
                 <ul>
-                    <li onclick="MoveSlider(0)">&nbsp;</li>
-                    <li onclick="MoveSlider(1)">1</li>
-                    <li onclick="MoveSlider(2)">2</li>
-                    <li onclick="MoveSlider(3)">3</li>
-                    <li onclick="MoveSlider(4)">4</li>
-                    <li onclick="MoveSlider(5)">5</li>
-                    <li onclick="MoveSlider(6)">6</li>
-                    <li onclick="MoveSlider(7)">7</li>
-                    <li onclick="MoveSlider(8)">8</li>
-                    <li onclick="MoveSlider(9)">&nbsp;</li>
+                    <li id="slide-index-0" onclick="MoveSlider(0)"><span>&nbsp;</span></li>
+                    <li id="slide-index-1" onclick="MoveSlider(1)"><span>1</span></li>
+                    <li id="slide-index-2" onclick="MoveSlider(2)"><span>2</span></li>
+                    <li id="slide-index-3" onclick="MoveSlider(3)"><span>3</span></li>
+                    <li id="slide-index-4" onclick="MoveSlider(4)"><span>4</span></li>
+                    <li id="slide-index-5" onclick="MoveSlider(5)"><span>5</span></li>
+                    <li id="slide-index-6" onclick="MoveSlider(6)"><span>6</span></li>
+                    <li id="slide-index-7" onclick="MoveSlider(7)"><span>7</span></li>
+                    <li id="slide-index-8" onclick="MoveSlider(8)"><span>8</span></li>
+                    <li id="slide-index-9" onclick="MoveSlider(9)"><span>&nbsp;</span></li>
                 </ul>
             </nav>
             <div id="indexText"></div>
         </div>
         <div id="leftArrow" class="arrows" onclick="moveBackground('left')"><</div>
         <div id="rightArrow" class="arrows" onclick="moveBackground('right')">></div>
-        <div class="marketing" onclick="GoToMedia('mediaMonks')"><img id="MediaMonks-logo" class="pust-to-right" src="Content/Image/mediamonks_logo_new.png" /></div>
+        <div class="marketing" onclick="GoToMedia('mediaMonks')"><img id="MediaMonks-logo" class="pust-to-right" src="./content/Image/mediamonks_logo_new.png" /></div>
     </div>
 </body>
-<script src="src/MonkController.js"></script>
+<script src="./content/js/MonkController.js"></script>
 </html>

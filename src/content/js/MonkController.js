@@ -55,6 +55,21 @@ const presentation = () => {
 	});
 };
 
+
+const paintSubItem = ({ color, index }) => {
+	const slide = document.getElementById(`slide-index-${index}`);
+	if(slide.children) {
+		slide.children[0].style.background = color;
+	}
+};
+
+const paintSelectedIndex = (index) => {
+	Array.from(Array(10).keys()).map(item => {
+		paintSubItem({ index: item, color: 'transparent' });
+	});
+	paintSubItem({ index, color: '#e9e5e5' });
+};
+
 const MoveSlider =  (index) => {
 	vm.index = index;
 	
@@ -62,13 +77,15 @@ const MoveSlider =  (index) => {
 	indexText.innerHTML = '';
 	indexText.className = '';
 
+	paintSelectedIndex(index);
+
 	const slide = sliders.find(slide => slide.index === index);
 	document.getElementById('slider').style.backgroundPosition = `${slide.withToMove}px 0px`;
 	
 	new Promise(() => {
 		setTimeout(() => {
 			replaceTheIndexText(index);
-		}, 2000);
+		}, 1000);
 	});
 };
 

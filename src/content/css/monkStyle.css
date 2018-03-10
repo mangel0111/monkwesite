@@ -98,6 +98,10 @@ li {
     border: 1px dotted white;
 }
 
+#slider-controls li span {
+    padding: 0 4px;
+}
+
 .monk {
     height: 1200px;
     background-position: 0px 0px;
